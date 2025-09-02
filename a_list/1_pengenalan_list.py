@@ -40,5 +40,3 @@ list3[1:3] = ["anggur"]     # Jika range index lebih banyak drpd item yg diganti
 print(list3)
 list3[3:5] = ["nangka", "leci", "ceri", "belimbing"]  # Jika range index lebih sedikit drpd item yg DIGANTI, maka sisa item akan ditambahkan di list ke kanan
 print(list3)
-
-# TODO: list method: len()
