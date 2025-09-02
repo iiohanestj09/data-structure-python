@@ -25,3 +25,14 @@ print(tuple1[3])
 
 # Tuple sudah ordered -> Python akan menyimpannya sesuai persis dengan urutannya dibuat, kalau array unordered
 list3 = [4, 1, 3, 8, 6, 2]  # 0-4, 1-1, 2-3, 3-8, 4-6, 5-2
+
+
+# Tuple itu unchangeable, artinya isi di dalamnya tidak daoat diubah-ubah (tambah, hapus, dll). Namun disini letak kerjaanya
+  # Kita mengubah tuple -> list, lalu manipulasi di list -> ubah lagi ke tuple
+x = (1, 2, 3, 4, 5, 6)
+y = list(x)
+y.append(7)
+y.pop(0)
+x = tuple(y)
+print(x)
+print(y)
