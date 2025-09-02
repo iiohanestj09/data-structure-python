@@ -9,11 +9,6 @@ listNum.sort()
 print(listStr)
 print(listNum)
   
-  # upper dan lower case termasuk case sensitive  -> uppercase akan didahulukan
-list3 = ["apel", "anggur", "ayam", "babi", "Belimbing", "Cicak", "Zebra"]
-list3.sort()
-print(list3)
-
 
 # 2. Sort Descending, .sort(reverse = True)
 list1 = ["b", "x", "q", "a", "j", "d"]
@@ -25,9 +20,26 @@ print(list1)
 def myFunc(n):
     return abs(n - 50)
 
-thisList = [100, 75, 50, 25, 12, 5, 0]
-thisList.sort(key= myFunc)      # key-nya harus callable
-print(thisList)                 
+list2 = [100, 75, 50, 25, 12, 5, 0]
+list2.sort(key= myFunc)      # key-nya harus callable
+print(list2)                 
 # Hasil pengurangan:    50, 25, 0, 25, 38, 45, 50 
 # Diurutkan:            0, 25, 25, 38, 45, 50, 50
-# Item asli (hasil):    50, 75, 25, 12, 5, 100, 0  
+# Item asli (hasil):    50, 75, 25, 12, 5, 100, 0
+
+
+# 4. Case sensitive, upper dan lower case termasuk case sensitive  -> uppercase akan didahulukan
+list3 = ["apel", "anggur", "ayam", "babi", "Belimbing", "Cicak", "Zebra"]
+list3.sort()
+print(list3)
+
+  # gunakan key = str.lower()
+list4 = ["apel", "anggur", "ayam", "babi", "Belimbing", "Cicak", "Zebra"]
+list4.sort(key= str.lower)      # Tidak mengubah item asli ke lower
+print(list4)
+
+
+# 5. Reversed Order  -> tipe data mix di list dibolehkan
+list5 = ["ayam", 3, 5, "coba", True, 9.9]
+list5.reverse()
+print(list5)
