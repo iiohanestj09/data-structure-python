@@ -24,3 +24,13 @@ dict1 = {
 }
 list1.extend(dict1)
 print(list1)
+
+# 4. Bisa juga menggunakan operator tambah (+)
+list3 = [1, 2, 3]
+list4 = [4, 5, 6]
+
+list5 = list3 + list4
+print(list5)
+
+list6 = list5 + ["ayam", "geprek", "sambal", "matah"]
+print(list6)
