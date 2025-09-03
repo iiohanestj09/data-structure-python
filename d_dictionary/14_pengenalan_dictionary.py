@@ -39,6 +39,19 @@ print(type(dict1.values()))
 print(dict2.items())
 print(type(dict2.items))
 
-
-if "name" in dict2:         # mengecek sebuah key ada
+  # E. Mengecek sebuah key ada
+if "name" in dict2:
     print("horeee")
+print("-" * 50)
+
+
+# 3. Mengubah Value
+  # A. Secara manual
+dict1["hewan"] = "kucheng"
+dict1["coba"] = 999             # jika key nya tidak ada, maka akan otomatis ditambahkan dgn valuenya
+print(dict1)
+
+  # B. .update()
+dict1.update({"hewan": "anjengg"})
+dict1.update({"cihuy": 666})    # jika key nya tidak ada, maka akan otomatis ditambahkan dgn valuenya
+print(dict1)
