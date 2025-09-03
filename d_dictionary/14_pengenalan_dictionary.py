@@ -20,6 +20,8 @@ print(len(dict1))
 print(dict2)
 print(type(dict2))
 print(len(dict2))
+
+print(dict1[(3, 4)][69])        # akses nested dict
 print("-" * 50)
 
 
@@ -55,3 +57,14 @@ print(dict1)
 dict1.update({"hewan": "anjengg"})
 dict1.update({"cihuy": 666})    # jika key nya tidak ada, maka akan otomatis ditambahkan dgn valuenya
 print(dict1)
+print("-" * 50)
+
+
+# 4. Copy Dictionary
+  # A. Menggunakan dict()
+newDict1 = dict(dict1)
+print(newDict1)
+
+  # B. Menggunakan .copy()
+newDict2 = dict1.copy()
+print(newDict2)
