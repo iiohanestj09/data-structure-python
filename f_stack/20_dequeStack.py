@@ -1,4 +1,5 @@
-# Menggunakan collections.deque  -> lebih efisien
+# Menggunakan collections.deque  -> lebih efisien daripada listStack
+# Segi big o notation, deque() lebih efisien dari list utk membuat stack
 
 from collections import deque
 
