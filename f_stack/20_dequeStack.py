@@ -12,13 +12,13 @@ class Stack:
     
     def pop(self):
         if self.isEmpty():
-            print("Stack is empty!")
+            print("Gagal pop, Stack kosong!")
             return None
         return self.items.pop()
     
     def peek(self):
         if self.isEmpty(): 
-            print("Stack is empty!")
+            print("Gagal peek, Stack kosong!")
             return None
         return self.items[-1]
     
@@ -26,7 +26,7 @@ class Stack:
         return len(self.items) == 0
         
     def display(self):
-        if self.isEmpty(): print("Stack is empty!")
+        if self.isEmpty(): print("Gagal display, Stack kosong!")
         else: print(list(reversed(self.items)))
 
 

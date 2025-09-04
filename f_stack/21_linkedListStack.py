@@ -16,7 +16,7 @@ class Stack:
     
     def pop(self):
         if self.isEmpty():
-            print("Stack is empty!")
+            print("Gagal pop, Stack kosong!")
             return None
         poppedValue = self.top.data
         self.top = self.top.next
@@ -25,7 +25,7 @@ class Stack:
     
     def peek(self):
         if self.isEmpty():
-            print("Stack is empty!")
+            print("Gagal peek, Stack kosong!")
             return None
         return self.top.data    
     
@@ -33,7 +33,7 @@ class Stack:
         return self.top is None
     
     def display(self):
-        if self.isEmpty(): print("Stack is empty!")
+        if self.isEmpty(): print("Gagal display, Stack kosong!")
         else:
             current = self.top
             while current:
