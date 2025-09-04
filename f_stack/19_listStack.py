@@ -6,19 +6,22 @@ class Stack:
         self.items.append(item)
     
     def pop(self):
-        if len(self.items) == 0:
+        if self.isEmpty():
             print("Stack is empty!")
             return None
         return self.items.pop()
     
     def peek(self):
-        if len(self.items) == 0:
+        if self.isEmpty():
             print("Stack is empty!")
             return None
         return self.items[-1]
     
+    def isEmpty(self):
+        return len(self.items) == 0
+    
     def display(self):
-        if len(self.items) == 0: print("Stack is empty!")
+        if self.isEmpty(): print("Stack is empty!")
         else: print(f"{self.items[::-1]}")     # list[start:stop:step]
 
 
