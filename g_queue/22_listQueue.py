@@ -3,17 +3,17 @@ class Queue:
         self.items = []
         
     def enqueue(self, item):
-        self.items.append(item)
+        self.items.append(item)         # O(1) amortized
     
     def dequeue(self):
         if self.isEmpty():
-            print("Gagal dequeue, Queue is empty!")
+            print("Gagal dequeue, Queue kosong!")
             return None
-        return self.items.pop(0)        # hapus item terdepan
+        return self.items.pop(0)        # O(n), hapus item terdepan dan semuanya bergeser ke kiri
     
     def front(self):
         if self.isEmpty():
-            print("Gagal front, Queue is empty!")
+            print("Gagal front, Queue kosong!")
             return None
         return self.items[0]
     
@@ -21,7 +21,7 @@ class Queue:
         return len(self.items) == 0
     
     def display(self):
-        if self.isEmpty(): print("Gagal display, Queue is empty!")
+        if self.isEmpty(): print("Gagal display, Queue kosong!")
         else: 
             print(self.items)
             
