@@ -3,7 +3,7 @@ class Stack:
         self.items = []
     
     def push(self, item):
-        self.items.append(item)
+        self.items.append(item)         # O(1) amortized, kadang O(1) kadang O(n) karena resize list
     
     def pop(self):
         if self.isEmpty():
