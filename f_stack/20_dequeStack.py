@@ -8,7 +8,7 @@ class Stack:
         self.items = deque()
     
     def push(self, item):
-        self.items.append(item)
+        self.items.append(item)     # Selalu O(1) operation, karena saat saat nambah cukup bikin pointer baru
     
     def pop(self):
         if self.isEmpty():
