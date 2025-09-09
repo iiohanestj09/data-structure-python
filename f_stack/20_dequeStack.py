@@ -30,7 +30,7 @@ class Stack:
         else: print(list(reversed(self.items)))
 
 
-# Implementation
+# Implementasi
 st = Stack()
 
 print(st.pop())
