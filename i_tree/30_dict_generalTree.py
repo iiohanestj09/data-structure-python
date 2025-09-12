@@ -2,7 +2,7 @@
 
 class Tree:
     def __init__(self):
-        self.tree = {}      # {parent: [children]}
+        self.tree = {}      # {parent: [children]}  {string: List->[string]}
     
     def addNode(self, parent, child):
         if parent not in self.tree:
